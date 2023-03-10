@@ -1,0 +1,21 @@
+/* Global style reset. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pageFrame {
+    display: grid;
+}
+
+.navbar {
+    display: grid;
+}
+
+.sidePanel {
+    display: grid;
+}
+
+.mainPanel {
+    display: grid;
+}
