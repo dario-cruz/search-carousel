@@ -29,6 +29,6 @@
   },
   "dependencies": {
     "@dariocru/attribute-helper": "^0.0.2",
-    "googlethis": "^1.7.1"
+    "googleimg": "^3.0.2"
   }
 }

@@ -27,7 +27,22 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     width: 100svw;
     height: 5em;
+    grid-template-areas: 
+    "left mid mid .";
+}
 
+.heading-div {
+    grid-area: left;
+}
+.form-div {
+    grid-area: mid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#term-form > input {
+    width: 20em;
 }
 
 .sidePanel {
