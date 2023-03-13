@@ -2,20 +2,31 @@
 * {
     margin: 0;
     padding: 0;
+    border: solid black 1px;
 }
-
+/* Main frame of web app. */
 .pageFrame {
+    /* width: 100%; */
+    /* height: 100%; */
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "nav nav nav nav"
+    "side main main main"
+    "side main main main"
+    "side main main main"
+    "side main main main";
 }
 
 .navbar {
-    display: grid;
+    grid-area: nav;
 }
 
 .sidePanel {
-    display: grid;
+    grid-area: side;
 }
 
 .mainPanel {
-    display: grid;
+    grid-area: main;
 }
