@@ -9,7 +9,8 @@ module.exports = {
     devtool: 'inline-source-map',
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Search Carosiel'
+            title: 'Search Carousel',
+            template: './src/index.html'
         }),
     ],
     output: {
