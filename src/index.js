@@ -4,7 +4,7 @@ import './index.css'
 
 // Body element to attach the rest of the dom elements to.
 const docBody = document.body
-const docHeader = document.createElement('header')
+const docHeader = document.querySelector('header')
 
 // Create the main page frame.
 // Container for all content

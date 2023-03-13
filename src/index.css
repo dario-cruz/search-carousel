@@ -18,11 +18,16 @@
     "side main main main";
 }
 
-.navbar {
+header {
+    height: 5em ;
+}
+nav {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
     width: 100svw;
-    height: 10em ;
+    height: 5em;
+
 }
 
 .sidePanel {
