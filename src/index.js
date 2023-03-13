@@ -32,8 +32,10 @@ searchForm.addEventListener('submit', (e) => {
 
 const searchBar = document.createElement('input')
 attributeHelper(searchBar, {
-    'type':'search'
-    
+    'type':'search',
+    'autocomplete':'off',
+    'placeholder':'Enter a term.',
+    'id':'search',
 })
 
 searchForm.append(searchBar)
@@ -59,10 +61,16 @@ navBar.append(headingDiv)
 // Side panel to scroll through images.
 const sidePanel = document.createElement('div')
 attributeHelper(sidePanel, {'class':'sidePanel'})
-
+// -------------------------------------------------------
 // Main panel to display images.
 const mainPanel = document.createElement('div')
 attributeHelper(mainPanel, {'class':'mainPanel'})
+
+const imageDiv = document.createElement('div')
+attributeHelper(imageDiv, {'class':'iamge-div'})
+
+
+// -------------------------------------------------------
 
 // Append all the things.
 

@@ -44,6 +44,9 @@ nav {
 #term-form > input {
     width: 20em;
 }
+input::placeholder {
+    text-align: center;
+}
 
 .sidePanel {
     grid-area: side;
