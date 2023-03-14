@@ -13,7 +13,7 @@
     --primary-color-dark: #132743;
 }
 body {
-    background-color: var(--secondary-color-dark);
+    background-color: var(--secondary-color-light);
 }
 /* Main frame of web app. */
 .pageFrame {
@@ -80,4 +80,5 @@ input::placeholder {
     font-size: small;
     font-weight: 100;
     color: var(--secondary-color-light);
+    text-align: center;
 }

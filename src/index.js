@@ -61,15 +61,16 @@ navBar.append(headingDiv)
 // Side panel to scroll through images.
 const sidePanel = document.createElement('div')
 attributeHelper(sidePanel, {'class':'sidePanel'})
+
+const sideImageContainer = document.createElement('div')
+attributeHelper(sideImageContainer, {'class':'side-image-container'})
 // -------------------------------------------------------
 // Main panel to display images.
 const mainPanel = document.createElement('div')
 attributeHelper(mainPanel, {'class':'mainPanel'})
 
-const imageDiv = document.createElement('div')
-attributeHelper(imageDiv, {'class':'iamge-div'})
-
-
+const mainImageContainer = document.createElement('div')
+attributeHelper(mainImageContainer, {'class':'main-image-container'})
 // -------------------------------------------------------
 
 // Append all the things.
