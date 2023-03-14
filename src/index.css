@@ -2,7 +2,18 @@
 * {
     margin: 0;
     padding: 0;
-    border: solid black 1px;
+    /* border: solid black 1px; */
+}
+
+/* Setting color pallet custom props. */
+:root {
+    --secondary-color-light: #f8efd4;
+    --secondary-color-dark: #edc988;
+    --primary-color-light: #d7385e;
+    --primary-color-dark: #132743;
+}
+body {
+    background-color: var(--secondary-color-dark);
 }
 /* Main frame of web app. */
 .pageFrame {
@@ -29,6 +40,8 @@ nav {
     height: 5em;
     grid-template-areas: 
     "left mid mid .";
+    background-color: var(--primary-color-dark);
+    border-radius: 0em 0em 1em 1em;
 }
 
 .heading-div {
@@ -54,4 +67,17 @@ input::placeholder {
 
 .mainPanel {
     grid-area: main;
+}
+
+.heading {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--secondary-color-light);
+}
+.sub-text {
+    padding: 0.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-weight: 100;
+    color: var(--secondary-color-light);
 }
