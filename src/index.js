@@ -38,6 +38,12 @@ attributeHelper(searchBar, {
     'id':'search',
 })
 
+let searchTeam = ''
+searchBar.addEventListener('input', (e) => {
+    searchTeam = e.target.value.toLowerCase()
+    
+})
+
 searchForm.append(searchBar)
 formDiv.append(searchForm)
 navBar.append(formDiv)
