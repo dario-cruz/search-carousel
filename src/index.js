@@ -1,6 +1,6 @@
-// import { searchForTerm } from "./getImages"
 import attributeHelper from "@dariocru/attribute-helper"
 import './index.css'
+import { searchPexels } from "./searchApi"
 
 // Body element to attach the rest of the dom elements to.
 const docBody = document.body
@@ -41,7 +41,7 @@ attributeHelper(searchBar, {
 let searchTeam = ''
 searchBar.addEventListener('input', (e) => {
     searchTeam = e.target.value.toLowerCase()
-    
+
 })
 
 searchForm.append(searchBar)
@@ -83,6 +83,5 @@ attributeHelper(mainImageContainer, {'class':'main-image-container'})
 
 pageFrame.append(sidePanel, mainPanel)
 
-
-// searchForTerm(apples)
-// Check to see if module is working.
+// -------------------------------------------------------
+searchPexels('apples')
