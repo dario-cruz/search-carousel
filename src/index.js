@@ -84,4 +84,4 @@ attributeHelper(mainImageContainer, {'class':'main-image-container'})
 pageFrame.append(sidePanel, mainPanel)
 
 // -------------------------------------------------------
-searchPexels('apples')
+searchPexels('cars')
