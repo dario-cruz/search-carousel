@@ -1,5 +1,5 @@
-import { searchPexels } from "./searchApi";
 import { imageAppender } from "./imageAppender";
+import { mainPanel } from ".";
 
 const dataProcessor = (theData) => {
     // Get and store data for the next page.
@@ -13,7 +13,8 @@ const dataProcessor = (theData) => {
     }
     console.log(imageSrc)
     console.log(nextPage)
-
+    
+    mainPanel.innerHTML = ''
     imageSrc.forEach(element => {
         imageAppender(element)
     });

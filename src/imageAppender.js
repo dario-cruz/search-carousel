@@ -8,7 +8,7 @@ const imageAppender = (imageObject) => {
         'src':`${imageObject.medium}`,
         'class':'gallery-image',
     })
-    mainPanel.innerHTML = ''
+    
     mainPanel.append(imageDomElem)
 }
 
