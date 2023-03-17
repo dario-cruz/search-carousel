@@ -58,6 +58,7 @@ nav {
 }
 
 #term-form > input {
+    text-align: center;
     width: 20em;
 }
 input::placeholder {

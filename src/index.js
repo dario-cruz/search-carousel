@@ -33,17 +33,18 @@ searchForm.addEventListener('submit', (e) => {
 })
 
 const searchBar = document.createElement('input')
+let searchBarText = 'Enter a term'
 attributeHelper(searchBar, {
     'type':'search',
     'autocomplete':'off',
-    'placeholder':'Enter a term.',
+    'placeholder':searchBarText,
     'id':'search',
 })
-
-let searchTeam = ''
-searchBar.addEventListener('input', (e) => {
-    searchTeam = e.target.value.toLowerCase()
-
+searchBar.addEventListener('focus', () => {
+    searchBar.setAttribute('placeholder', '')
+})
+searchBar.addEventListener('focusout', () => {
+    searchBar.setAttribute('placeholder', searchBarText)
 })
 
 searchForm.append(searchBar)
