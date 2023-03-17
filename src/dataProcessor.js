@@ -15,7 +15,7 @@ const dataProcessor = (theData) => {
     console.log(nextPage)
 
     imageSrc.forEach(element => {
-        
+        imageAppender(element)
     });
 }
 

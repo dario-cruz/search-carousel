@@ -120,3 +120,6 @@ input::placeholder {
     color: var(--secondary-color-light);
     text-align: center;
 }
+.gallery-image {
+    border-radius: 5px;
+}
