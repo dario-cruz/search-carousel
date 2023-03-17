@@ -28,6 +28,8 @@ attributeHelper(searchForm, {'id':'term-form'})
 searchForm.addEventListener('submit', (e) => {
     // Prevent submitting of form to refresh the page. 
     e.preventDefault()
+    searchPexels(`${searchBar.value}`)
+    searchBar.value = ''
 })
 
 const searchBar = document.createElement('input')
