@@ -1,0 +1,2 @@
+import { searchPexels } from "./searchApi";
+
