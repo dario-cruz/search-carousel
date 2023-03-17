@@ -8,7 +8,7 @@ const imageAppender = (imageObject) => {
         'src':`${imageObject.medium}`,
         'class':'gallery-image',
     })
-    
+    imageDomElem.style.opacity = '0'
     mainPanel.append(imageDomElem)
 }
 

@@ -41,7 +41,7 @@ nav {
     grid-template-areas: 
     "left mid mid .";
     background-color: var(--primary-color-dark);
-    border-radius: 0em 0em 1em 1em;
+    /* border-radius: 0em 0em 1em 1em; */
 }
 
 .heading-div {
@@ -66,13 +66,13 @@ input::placeholder {
 
 .mainPanel {
     grid-area: main;
-    overflow: hidden;
+    overflow: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
     /* Settings for the responsive grid. */
     line-height: 0;
     column-count: 5;
-    column-gap: 0px;
+    column-gap: 3px;
 }
 @media (max-width: 1200px) {
     .mainPanel {
@@ -121,5 +121,5 @@ input::placeholder {
     text-align: center;
 }
 .gallery-image {
-    border-radius: 5px;
+    transition: opacity 2s ease;
 }
