@@ -6,10 +6,6 @@ const dataProcessor = (theData) => {
     // Process the photo information and distill to only the image url.
     let imageList = theData.photos
 
-// Object.values(imageList).forEach(key => {
-//     console.log(Object.keys(key))
-//     imageSrc.push(key)
-// })
     let imageSrc = imageList.map(processThis) 
     function processThis (value) {
         return value.src
