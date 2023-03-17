@@ -85,3 +85,5 @@ pageFrame.append(mainPanel)
 
 // -------------------------------------------------------
 searchPexels('cars')
+
+export {mainPanel}
