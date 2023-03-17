@@ -66,6 +66,7 @@ input::placeholder {
 }
 
 .mainPanel {
+    padding: 5px;
     grid-area: main;
     overflow: auto;
     scroll-behavior: smooth;
@@ -104,6 +105,7 @@ input::placeholder {
     }
   }
 .mainPanel img {
+    padding: 1px;
     width: 100%;
     height: auto;
 }
